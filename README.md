@@ -1,2 +1,2 @@
-# gradletutorial
-gradle tutorial with groovy
+# DTS Kominfo 2020 - IT Perbankan Backend
+Thematic Academy
