@@ -1,0 +1,26 @@
+task ensureDirectory {
+    doLast {
+        mkdir "new"
+    }
+}
+// make a new directory
+
+task copyReport(type: Copy) {
+    from "from/contoh.txt"
+    into "new"
+}
+// copy 1 file
+
+task copyReport2(type: Copy) {
+    from "from/contoh.txt", "from2/contoh2.txt"
+    into "new"
+}
+// copy more file
+
+task copyReport3(type: Copy) {
+    from ("from"){
+    include "dalam/**"
+    }
+into "new"
+}
+// copy directory

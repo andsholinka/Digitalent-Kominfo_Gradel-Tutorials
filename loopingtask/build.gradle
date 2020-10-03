@@ -1,0 +1,9 @@
+9.times { index ->
+    task "task$index"{
+        doLast {
+            println "Task nomor-$index"
+        }
+    }
+}
+
+task0.dependsOn task2,task4,task6,task8
